@@ -3,16 +3,20 @@
   "name": "apptiller",
   "version": "1.0.0",
   "description": "App Store growth data for your apps: downloads and sales, the App Store funnel, search ranks, AI answers, ads and revenue.",
-  "author": { "name": "GPT Genius Lab", "email": "support@apptiller.com", "url": "https://apptiller.com" },
+  "author": {
+    "name": "GPT Genius Lab",
+    "email": "support@apptiller.com",
+    "url": "https://apptiller.com"
+  },
   "homepage": "https://apptiller.com/features/claude-chatgpt-connector",
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "Apptiller",
         "shortDescription": "App Store growth, AI answers",
-        "longDescription": "Apptiller gives ChatGPT the same account and data as the Apptiller web app, so it can answer questions about your App Store apps with your real numbers instead of general advice.\n\nWhat it reads: App Store Connect sales and downloads, the App Store funnel (impressions, page views, conversion and where people found the app), where the app ranks in App Store search, changes to its listing, and AI visibility: how often ChatGPT, Google AI Mode and AI Overviews name the app for the questions buyers ask, which apps they name instead, and which pages they cite. With the matching accounts connected, it also reads Apple Ads, Meta and Google Ads, attribution from AppsFlyer and Adjust, and RevenueCat revenue, so you can ask across them: which campaign brought people who paid, or whether a rank change came before a downloads change.\n\nIt can propose changes, such as pausing an ad set that spends with no results, each with its evidence. A change to a live ad account is made only for a proposal you have seen and approved, the old value is kept, and it can be undone.\n\nSign in with Google or with your email. Your accounts are connected in Apptiller's web app; keys are never entered in the chat.",
+        "longDescription": "Apptiller brings your App Store apps' growth data into the conversation, from the same account as the Apptiller web app, so answers about your apps rest on your real numbers instead of general advice.\n\nWhat it reads: App Store Connect sales and downloads, the App Store funnel (impressions, page views, conversion and where people found the app), where the app ranks in App Store search, changes to its listing, and AI visibility: how often AI answers name the app for the questions buyers ask, which apps they name instead, and which pages they cite. With the matching accounts connected, it also reads Apple Ads, Meta and Google Ads, attribution from AppsFlyer and Adjust, and RevenueCat revenue, so you can ask across them: which campaign brought people who paid, or whether a rank change came before a downloads change.\n\nIt can propose changes, such as pausing an ad set that spends with no results, each with its evidence. A change to a live ad account is made only for a proposal you have seen and approved, the old value is kept, and it can be undone.\n\nSign in with Google or with your email. Your accounts are connected in Apptiller's web app; keys are never entered in the conversation.",
         "developerName": "GPT Genius Lab",
-        "category": "Business",
+        "category": "Data & Analytics",
         "websiteURL": "https://apptiller.com",
         "supportURL": "https://apptiller.com/support",
         "privacyPolicyURL": "https://apptiller.com/privacy",
