@@ -83,6 +83,14 @@ Full policy: [apptiller.com/privacy](https://apptiller.com/privacy).
 - Product page: [apptiller.com/features/claude-chatgpt-connector](https://apptiller.com/features/claude-chatgpt-connector)
 - Issues with these docs: open an issue in this repository.
 
+## Install in Cline
+
+```bash
+cline mcp install apptiller --transport http https://mcp.apptiller.com/mcp
+```
+
+Or add it to Cline's MCP settings as a remote server (`streamable-http`, `https://mcp.apptiller.com/mcp`). Cline opens Apptiller's sign-in the first time a tool needs your account.
+
 ## Updating the tool reference
 
 [TOOLS.md](TOOLS.md) is generated from the live servers:
@@ -90,3 +98,7 @@ Full policy: [apptiller.com/privacy](https://apptiller.com/privacy).
 ```bash
 node scripts/tools.mjs
 ```
+
+## License
+
+The documentation and scripts in this repository are MIT licensed. The Apptiller service itself is hosted by GPT Genius Lab LLC and governed by its [terms](https://apptiller.com/terms).
