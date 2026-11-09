@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.apptiller/apptiller",
   "title": "Apptiller",
-  "description": "Grow App Store apps: ranks, listing, ads, revenue, SEO and AI answers. Public tools need no sign-in.",
-  "version": "0.1.2",
+  "description": "Grow App Store apps: ranks, listing, ads, revenue and AI answers. Sign in to read your own apps.",
+  "version": "0.1.3",
   "websiteUrl": "https://apptiller.com/features/claude-chatgpt-connector",
   "repository": {
     "url": "https://github.com/GPT-Genius-Lab/apptiller-mcp",
