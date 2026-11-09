@@ -3,8 +3,12 @@
   "name": "com.apptiller/apptiller",
   "title": "Apptiller",
   "description": "Grow App Store apps: ranks, listing, ads, revenue, SEO and AI answers. Public tools need no sign-in.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://apptiller.com/features/claude-chatgpt-connector",
+  "repository": {
+    "url": "https://github.com/GPT-Genius-Lab/apptiller-mcp",
+    "source": "github"
+  },
   "icons": [
     {
       "src": "https://apptiller.com/favicon.svg",
