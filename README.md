@@ -35,7 +35,7 @@ Connecting needs no sign-in: the client can list the tools straight away. The fi
 - A new account is made as you sign in. The free plan needs no card.
 - To see your own numbers, connect your accounts in Apptiller: App Store Connect for sales, downloads and the App Store funnel, plus, if you use them, Apple Ads, Meta Ads, Google Ads, AppsFlyer, Adjust and RevenueCat. `connect_account` returns a link for this. Keys are entered on Apptiller's page, never in the chat.
 
-The tools on `/public` need no account at all: what Apptiller does and costs, a free read of any App Store app or website, and the Apptiller Launches board.
+The tools on `/public` need no account at all: what Apptiller does, a free read of any App Store app or website, and the Apptiller Launches board.
 
 ## What it can do
 
