@@ -51,10 +51,10 @@
               "expected_behavior": "Reports the share of tracked answers that name Damson per engine and question, its average position when named, the apps named instead, and the sites the answers cite."
             },
             {
-              "description": "Subscription revenue from RevenueCat.",
-              "prompt": "What revenue did Damson make from subscriptions in the last 30 days?",
-              "tools_triggered": "revenuecat_projects, revenuecat_revenue",
-              "expected_behavior": "Finds Damson's RevenueCat project and reports its revenue for the last 30 days (gross, and net of store fees where asked)."
+              "description": "Which buyer questions are tracked in AI answers for the app, and what Apptiller looks for in each answer.",
+              "prompt": "Which questions are tracked for Damson in AI answers, and what names and sites does Apptiller look for?",
+              "tools_triggered": "ai_visibility_tracked",
+              "expected_behavior": "Lists Damson as tracked, the names it goes by and its domain that answers are checked for, and its active questions."
             },
             {
               "description": "The app's App Store listing and recent changes to it.",
