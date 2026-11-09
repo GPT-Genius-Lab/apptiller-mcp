@@ -1,0 +1,82 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "apptiller",
+  "version": "1.0.0",
+  "description": "App Store growth data for your apps: downloads and sales, the App Store funnel, search ranks, AI answers, ads and revenue.",
+  "author": { "name": "GPT Genius Lab", "email": "support@apptiller.com", "url": "https://apptiller.com" },
+  "homepage": "https://apptiller.com/features/claude-chatgpt-connector",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Apptiller",
+        "shortDescription": "App Store growth, AI answers",
+        "longDescription": "Apptiller gives ChatGPT the same account and data as the Apptiller web app, so it can answer questions about your App Store apps with your real numbers instead of general advice.\n\nWhat it reads: App Store Connect sales and downloads, the App Store funnel (impressions, page views, conversion and where people found the app), where the app ranks in App Store search, changes to its listing, and AI visibility: how often ChatGPT, Google AI Mode and AI Overviews name the app for the questions buyers ask, which apps they name instead, and which pages they cite. With the matching accounts connected, it also reads Apple Ads, Meta and Google Ads, attribution from AppsFlyer and Adjust, and RevenueCat revenue, so you can ask across them: which campaign brought people who paid, or whether a rank change came before a downloads change.\n\nIt can propose changes, such as pausing an ad set that spends with no results, each with its evidence. A change to a live ad account is made only for a proposal you have seen and approved, the old value is kept, and it can be undone.\n\nSign in with Google or with your email. Your accounts are connected in Apptiller's web app; keys are never entered in the chat.",
+        "developerName": "GPT Genius Lab",
+        "category": "Business",
+        "websiteURL": "https://apptiller.com",
+        "supportURL": "https://apptiller.com/features/claude-chatgpt-connector",
+        "privacyPolicyURL": "https://apptiller.com/privacy",
+        "termsOfServiceURL": "https://apptiller.com/terms",
+        "defaultPrompt": [
+          "How did my app's downloads change this month, and where did they come from?",
+          "Do AI answers name my app, and which apps do they recommend instead?",
+          "What changed in my App Store listing recently?"
+        ],
+        "brandColor": "#1F6B4F",
+        "logo": "./assets/logo.png"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Overview of an app's App Store results from App Store Connect data.",
+              "prompt": "How is PCOS Meal Planner: Damson doing on the App Store over the last 28 days?",
+              "tools_triggered": "apps, app_store_sales",
+              "expected_behavior": "Lists the account's apps, then reports Damson's first-time downloads, re-downloads and proceeds by day from App Store Connect, with totals for the period."
+            },
+            {
+              "description": "Where an app's downloads came from, from Apple's App Analytics.",
+              "prompt": "Where did Damson's App Store downloads come from in the last 28 days: search, browse, websites or other apps?",
+              "tools_triggered": "app_store_funnel",
+              "expected_behavior": "Reports Damson's impressions, page views, first-time downloads and conversion rate split by source type (App Store search, browse, web referrer, app referrer) from App Analytics."
+            },
+            {
+              "description": "How often AI assistants name the app, and who they name instead.",
+              "prompt": "Do ChatGPT and Google's AI answers recommend Damson? Which apps do they name instead?",
+              "tools_triggered": "ai_visibility_report",
+              "expected_behavior": "Reports the share of tracked answers that name Damson per engine and question, its average position when named, the apps named instead, and the sites the answers cite."
+            },
+            {
+              "description": "Subscription revenue from RevenueCat.",
+              "prompt": "What revenue did Damson make from subscriptions in the last 30 days?",
+              "tools_triggered": "revenuecat_projects, revenuecat_revenue",
+              "expected_behavior": "Finds Damson's RevenueCat project and reports its revenue for the last 30 days (gross, and net of store fees where asked)."
+            },
+            {
+              "description": "The app's App Store listing and recent changes to it.",
+              "prompt": "What does Damson's App Store listing say right now, and what has changed in it?",
+              "tools_triggered": "app_store_listing",
+              "expected_behavior": "Shows Damson's current listing (name, developer, version, genre, price, rating) and the listing changes Apptiller has recorded, with dates."
+            }
+          ],
+          "negative": [
+            {
+              "description": "A request unrelated to App Store apps or their growth. The plugin should not be used.",
+              "prompt": "Book me a table for two at an Italian restaurant tonight."
+            },
+            {
+              "description": "Asking for another company's private numbers. Apptiller only reads accounts the user connected, so it should say it can't see them rather than guess.",
+              "prompt": "Show me Calm's App Store sales and revenue for last month."
+            },
+            {
+              "description": "Asking to change a live ad account with no proposal the user has seen and approved. The plugin should not change anything; it can show the analyst's findings instead.",
+              "prompt": "Double the budget on all of Damson's ad campaigns right now."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "Apptiller does not sell products or process payments in ChatGPT. It reads the user's own app data."
+      }
+    }
+  }
+}
