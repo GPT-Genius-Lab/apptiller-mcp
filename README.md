@@ -78,6 +78,7 @@ Full policy: [apptiller.com/privacy](https://apptiller.com/privacy).
 
 ## Support
 
+- Support page: [apptiller.com/support](https://apptiller.com/support)
 - Email: [support@apptiller.com](mailto:support@apptiller.com)
 - Product page: [apptiller.com/features/claude-chatgpt-connector](https://apptiller.com/features/claude-chatgpt-connector)
 - Issues with these docs: open an issue in this repository.
