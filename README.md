@@ -10,7 +10,7 @@ This repository holds the server's public documentation and its [MCP Registry](h
 | Public server (no sign-in) | `https://mcp.apptiller.com/public` |
 | Transport | Streamable HTTP |
 | Sign-in | OAuth 2.1 with dynamic client registration; Google, or a code sent by email |
-| Tools | 50 on `/mcp`, 5 on `/public`: see [TOOLS.md](TOOLS.md) |
+| Tools | 56 on `/mcp`, 5 on `/public`: see [TOOLS.md](TOOLS.md) |
 | Registry name | `com.apptiller/apptiller` |
 
 ## Connect
